@@ -1,7 +1,7 @@
 /* Sano — service worker: faz o app abrir sem internet e se atualizar sozinho.
    Ao publicar uma versão nova do index.html, aumente o número abaixo. */
-const VERSION = 'sano-v34';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png', './icons/favicon-64.png'];
+const VERSION = 'sano-v35';
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './maskable-512.png', './favicon-64.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)));
 });
