@@ -1,0 +1,36 @@
+SANO — como colocar no ar (grátis) e instalar
+
+O QUE TEM AQUI
+- index.html ............ o aplicativo inteiro
+- manifest.webmanifest .. nome, ícone e cores do app instalado
+- sw.js ................. faz o app abrir sem internet
+- icons/ ................ ícones do app
+
+1) COLOCAR NO AR (escolha um)
+A. Netlify (mais fácil): entre em app.netlify.com, crie uma conta grátis,
+   vá em "Add new site" > "Deploy manually" e arraste ESTA PASTA inteira.
+   Você recebe um endereço tipo https://sano-xyz.netlify.app (pode renomear).
+B. GitHub Pages: crie um repositório, envie estes arquivos e ative
+   Settings > Pages > Branch "main". Endereço: https://seuusuario.github.io/sano
+
+2) INSTALAR
+- Windows (Chrome ou Edge): abra o endereço e clique no ícone de instalar
+  na barra de endereço (ou menu ⋮ > "Instalar Sano").
+- Android (Chrome): abra o endereço > menu ⋮ > "Instalar app" /
+  "Adicionar à tela inicial".
+
+3) LEVAR SEUS DADOS
+No Sano antigo (dentro do Claude): Ajustes > Exportar backup.
+No app novo: Ajustes > Importar backup > escolha o arquivo.
+Faça isso no PC e no celular (cada aparelho guarda os próprios dados).
+
+4) BACKUP AUTOMÁTICO
+- Windows: Ajustes > "Escolher pasta de backup" > escolha uma pasta dentro
+  do Google Drive ou OneDrive. O Sano salva sozinho a cada poucos minutos.
+- Android: Ajustes > "Enviar backup para o Drive" (lembrete a cada 7 dias).
+- Para passar dados do PC para o celular: no celular, Ajustes > Importar
+  backup > abra o arquivo "sano-dados.json" da pasta do Drive.
+
+5) ATUALIZAR O APP
+Troque o index.html no site e aumente a versão em sw.js (sano-v1 > sano-v2).
+O app avisa que tem versão nova.
